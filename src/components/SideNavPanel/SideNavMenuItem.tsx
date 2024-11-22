@@ -1,5 +1,5 @@
 import {memo} from "react";
-import {navigationMenuItem} from "../../types/commonTypes.ts";
+import {navigationMenuItem} from "../../types/commonTypes.tsx";
 import {Box} from "@mui/material";
 import * as colours from '../../constants/colours.ts'
 
@@ -7,10 +7,11 @@ import * as colours from '../../constants/colours.ts'
 const classes = {
     menuItemContainer: {
         padding: '10px',
+        fontWeight: 'bold',
+        whiteSpace: 'nowrap',
     },
     selectedMenuItemContainer: {
         backgroundColor: colours.navSelectedMenuItemBackground,
-        padding: '10px',
     }
 }
 
@@ -23,7 +24,7 @@ type Props = {
 const SideNavMenuItem: React.FC<Props> = (props: Props) => {
     const {menuItem, selected, handleMenuItemClick} = props;
     return (
-        <Box sx={selected? classes.selectedMenuItemContainer : classes.menuItemContainer} onClick={()=>{
+        <Box sx={selected? [classes.menuItemContainer,classes.selectedMenuItemContainer] : classes.menuItemContainer} onClick={()=>{
             handleMenuItemClick(menuItem);
         }}>
             {menuItem.title}

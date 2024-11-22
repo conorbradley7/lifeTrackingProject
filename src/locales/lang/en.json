@@ -1,5 +1,5 @@
 {
-  "landingPage": {
-    "test": "helloWorld"
+  "root": {
+    "appTitle": "Life Tracking"
   }
 }

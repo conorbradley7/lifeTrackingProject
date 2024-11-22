@@ -8,10 +8,10 @@ const classes = {
         position: 'relative',
     }
 }
-const BudgetPage = () => {
+const BudgetPlanningPage = () => {
     return (
         <Box sx={classes.main} id={'budget-page'}></Box>
     )
 }
 
-export default BudgetPage;
+export default BudgetPlanningPage;

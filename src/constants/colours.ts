@@ -1,9 +1,9 @@
 export const mainAppWindowBackground = '#FFF';
-export const mainAppBarBackground = '#ececec';
+export const mainAppBarBackground = '#18456e';
 
 
 // Side Nav Menu Colours
-export const mainAppNavBarBackground = '#3c5596';
-export const navSelectedMenuItemBackground = '#64f577';
+export const mainAppNavBarBackground = '#dad9d9';
+export const navSelectedMenuItemBackground = '#4a90e2';
 
 

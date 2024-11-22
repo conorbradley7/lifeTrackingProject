@@ -1,5 +1,5 @@
 import {memo} from "react";
-import {Box} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 import * as colours from '../constants/colours.ts'
 const classes = {
     root: {
@@ -7,7 +7,15 @@ const classes = {
         position: 'relative',
         marginTop: '0px',
         height: '70px',
-        color: '#000',
+        display: 'flex',
+        alignItems: 'center',
+    },
+    title:{
+        color: '#FFF',
+        fontSize: '2.5em',
+        marginLeft: '50px',
+        fontWeight: 'bold',
+        fontFamily: 'Avenir'
     },
 };
 
@@ -19,7 +27,9 @@ type Props = {
 const MainAppBar : React.FC<Props> = (props:Props) => {
     const { appBarTitle} = props;
     return (
-        <Box sx={classes.root}>{appBarTitle}</Box>
+        <Box sx={classes.root}>
+            <Typography sx={classes.title}>{appBarTitle}</Typography>
+        </Box>
     );
 }
 

@@ -30,7 +30,7 @@ const AppInner = () => {
     return (
         <Box id={'appInner'} sx={classes.root}>
             <MainAppBar
-                appBarTitle={messages.landingPage.test}
+                appBarTitle={messages.root.appTitle}
             />
             <Box id={'main-app-container'} sx={classes.mainAppWindow}>
                 <AppRouter />

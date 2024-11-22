@@ -1,13 +1,10 @@
 const globalNavigationMessages = {
     homePage: "Home",
-    budgetPage: "Budget",
+    budgetPlanningPage: "Budget Planning",
+    transactionTrackingPage: "Transaction Tracking",
 }
 
-const LandingPageMessages = {
-        test: "helloWorld"
-}
 
 export default {
     globalNavigationMessages,
-    LandingPageMessages,
 }
